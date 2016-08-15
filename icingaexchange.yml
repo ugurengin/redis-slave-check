@@ -1,7 +1,7 @@
 name: redis-slave-check
 description: "file:///README.md"
 url: "https://github.com/ugurengin/redis-slave-check"
-tags: redis-slave
+tags: redis-slave, redis
 vendor: Redis
 target: Redis Slave Servers 
 type: Plugin
