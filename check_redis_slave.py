@@ -32,8 +32,13 @@ if __name__ == '__main__':
     check_req()
 
 def conn_redis():
-  conn = redis.StrictRedis(options.host, options.port, db=0)
-  return conn
+    try:
+        conn = redis.StrictRedis(options.host, options.port, db=0)
+        conn.ping()
+    except redis.ConnectionError:
+        print "Unknown: Redis connection is failed."
+        raise SystemExit(3)
+    return conn
 
 def valid_redis():
     r = conn_redis()
