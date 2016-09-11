@@ -37,7 +37,7 @@ def conn_redis():
         conn.ping()
     except redis.ConnectionError:
         print "Unknown: Redis connection is failed."
-        raise SystemExit(3)
+        raise SystemExit, 3
     return conn
 
 def valid_redis():
