@@ -14,5 +14,5 @@ releases:
       - 
         name: check_redis_slave.py
         url: "file:///check_redis_slave.py"
-        description: "First release"
-        checksum: db17956126f3a8a997d3d87fd5c05aaf
+        description: "Redis Slave Connectivity"
+        checksum: e69481ba3f80a12f9a681aff05205138
